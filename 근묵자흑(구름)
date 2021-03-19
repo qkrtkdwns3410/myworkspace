@@ -1,0 +1,12 @@
+
+
+N, K = map(int, input().split())
+lst = list(map(int, input().split()))
+
+N -= 1
+answer = N // (K-1)
+N %= (K-1)
+
+print(answer if N == 0 else answer+1)
+
+#인터넷 
